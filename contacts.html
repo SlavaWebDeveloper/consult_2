@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<!-- Bootstrap CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet" />
+
+		<!-- Theme CSS -->
+		<link href="css/theme.css" rel="stylesheet" />
+
+		<link rel="shortcut icon" type="image/x-icon" href="img/ico/email-ico.svg" />
+
+		<title>Universal HTML Template | Главная 1</title>
+	</head>
+	<body>
+		<section class="bg-accent hero-contactPage">
+			<?php include get_template_directory() . '/header-main.php'; ?>
+
+			<div class="wrapper position-relative overflow-hidden">
+				<div class="container">
+					<h2 class="text-uppercase">наши контакты</h2>
+					<div class="row align-items-center">
+						<div class="col-md-5 contact-info d-flex flex-column gap-4 z-2">
+							<div class="contact-tel">
+								<p class="h3 text-uppercase lh-1 mb-4">Телефоны</p>
+								<a
+									class="text-decoration-none text-dark h3 fw-normal m-0"
+									href="tel:+7 (495) 123-45-67"
+									>+7 (903) 700-83-33</a
+								>
+								<br />
+								<a
+									class="text-decoration-none text-dark h3 fw-normal m-0"
+									href="tel:+7 (495) 123-45-67"
+									>+7 (925) 700-83-33</a
+								>
+							</div>
+							<div class="contact-email">
+								<p class="h3 text-uppercase lh-1 mb-4">электронный адрес</p>
+								<a
+									class="text-decoration-none text-dark h3 fw-normal m-0"
+									href="mailto:info@mir-consult.ru"
+									>info@mir-consult.ru</a
+								>
+							</div>
+							<div class="contact-address">
+								<p class="h3 text-uppercase lh-1 mb-4">Юридический адрес</p>
+								<address class="h3 fw-normal">
+									125222, г.Москва, <br />
+									вн.тер.г.Муниципальный округ <br />
+									Митино, ул.Барышиха, д.14, к.3, кв.60
+								</address>
+							</div>
+						</div>
+						<div
+							class="col-md-7 position-relative hero-contactPage-wrapper align-self-end"
+						>
+							<img
+								src="img/contact-Mamayeva-Irina-General-Director.png"
+								alt="Изображение"
+								class="img-fluid top-lg-50 start-lg-50 translate-lg-middle z-2 position-relative"
+							/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="map-section py-5">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-12">
+						<div class="map-wrapper rounded-4 overflow-hidden" id="map2"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="contact-section bg-grey" aria-labelledby="contact-title">
+			<div class="container">
+				<div
+					class="row justify-content-center justify-content-md-between position-relative contact-section-form-inner align-items-center"
+				>
+					<div class="col-12 col-md-7 z-2 mb-5 mb-md-0">
+						<img
+							src="img/woman-working-call-center-talking-with-clients-using-headphones-microphone.jpg"
+							alt="Оператор колл-центра общается с клиентами по гарнитуре"
+							class="contact-section-img w-100"
+							loading="lazy"
+						/>
+					</div>
+
+					<div class="col-12 col-md-4 z-2">
+						<h2
+							aria-labelledby="contact-title"
+							class="contact-section-title text-uppercase"
+						>
+							мы рады
+							<span style="letter-spacing: -0.03em">ответить на все</span> ваши
+							вопросы
+						</h2>
+						<form
+							class="w-100 contact-section-form"
+							id="contactForm"
+							novalidate
+							aria-describedby="form-instruction"
+						>
+							<p id="form-instruction" class="visually-hidden">
+								Введите ваше имя, email и телефон (они обязательны для заполнения),
+								а также, если необходимо, оставьте комментарий.
+							</p>
+
+							<label class="custom-field">
+								<input
+									name="name"
+									type="text"
+									placeholder="Ваше имя"
+									required
+									aria-required="true"
+								/>
+								<span class="placeholder">Имя</span>
+								<span class="error-message" aria-live="polite"></span>
+							</label>
+							<label class="custom-field">
+								<input
+									name="email"
+									type="email"
+									placeholder="Ваш e-mail"
+									required
+									aria-required="true"
+								/>
+								<span class="placeholder">Почта</span>
+								<span class="error-message" aria-live="polite"></span>
+							</label>
+							<label class="custom-field">
+								<input
+									name="phone"
+									type="tel"
+									placeholder="Ваш номер телефона"
+									required
+									aria-required="true"
+								/>
+								<span class="placeholder">Телефон</span>
+								<span class="error-message" aria-live="polite"></span>
+							</label>
+							<label class="custom-field mb-4">
+								<textarea
+									name="comment"
+									placeholder="Сообщение или детали запроса"
+									rows="3"
+									maxlength="300"
+									aria-describedby="comment-help"
+								></textarea>
+								<span class="placeholder">Детали</span>
+								<small id="comment-help" class="visually-hidden"
+									>Максимальная длина сообщения — 300 символов.</small
+								>
+							</label>
+							<button
+								type="submit"
+								class="btn btn-accent"
+								aria-label="Отправить заявку"
+							>
+								оставить заявку
+							</button>
+						</form>
+
+						<div
+							id="successMessage"
+							class="success-message"
+							role="alert"
+							aria-live="assertive"
+						>
+							<p class="h2">Форма успешно отправлена!</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Модальное окно для видео -->
+		<div
+			class="modal fade"
+			id="videoModal"
+			tabindex="-1"
+			aria-labelledby="videoModalLabel"
+			aria-hidden="true"
+			data-bs-backdrop="static"
+		>
+			<div class="modal-dialog modal-dialog-centered modal-custom">
+				<div class="modal-content justify-content-center">
+					<div class="modal-header">
+						<h5
+							class="modal-title h2 text-center lh-1 text-uppercase"
+							id="videoModalLabel"
+						>
+							Экспертное бухгалтерское, юридическое и финансовое обслуживание
+						</h5>
+					</div>
+					<div class="modal-body p-0 align-content-center">
+						<div class="ratio ratio-16x9 video-container">
+							<iframe
+								src=""
+								frameborder="0"
+								allow="autoplay; encrypted-media"
+								allowfullscreen
+								id="modalVideoIframe"
+							></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer class="footer bg-dark text-white">
+			<div class="container">
+				<div class="row row-cols-1 row-cols-md-4 gy-4 align-items-stretch">
+					<div class="col col-md-3 col-lg-2 d-flex flex-column justify-content-between r">
+						<a href="#" class="footer-logo">
+							<img src="img/logotip-light.svg" alt="Логотип" class="img-fluid" />
+						</a>
+						<p class="footer-copyright d-none d-md-block m-0">
+							&copy; 2025 Meritora, Inc. <br />
+							All rights reserved.
+						</p>
+					</div>
+
+					<div class="col col-md-5 col-lg-4 footer-link-wrapper">
+						<ul class="list-unstyled footer-link mt-0">
+							<li>
+								<a href="#" class="text-white text-decoration-none"
+									>Регистрация бизнеса</a
+								>
+							</li>
+							<li>
+								<a href="#" class="text-white text-decoration-none"
+									>Юридическое обслуживание</a
+								>
+							</li>
+							<li>
+								<a href="#" class="text-white text-decoration-none">Консалтинг</a>
+							</li>
+							<li>
+								<a href="#" class="text-white text-decoration-none"
+									>Знания (личный опыт/советы)</a
+								>
+							</li>
+						</ul>
+					</div>
+
+					<div class="col col-md-3 col-lg-4">
+						<ul class="list-unstyled mt-0">
+							<li>
+								<a href="#" class="text-white text-decoration-none">О компании</a>
+							</li>
+							<li>
+								<a href="#" class="text-white text-decoration-none">Контакты</a>
+							</li>
+							<li>
+								<a href="#" class="text-white text-decoration-none">Вакансии</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="col col-md-1 col-lg-2 align-content-center footer-social-icons">
+						<div class="social-icons d-flex gap-2 flex-md-column flex-lg-row">
+							<a href="#" class="p-0">
+								<img src="img/icons/vk.svg" class="social-icon" loading="lazy" />
+							</a>
+							<a href="#" class="p-0">
+								<img
+									src="img/icons/youtube.svg"
+									class="social-icon"
+									loading="lazy"
+								/>
+							</a>
+							<a href="#" class="p-0">
+								<img
+									src="img/icons/telegram.svg"
+									class="social-icon"
+									loading="lazy"
+								/>
+							</a>
+						</div>
+					</div>
+				</div>
+				<!-- Копирайт для больших экранов -->
+				<p class="footer-copyright d-md-none mb-0">
+					&copy; 2025 Meritora, Inc.
+					<br />All rights reserved.
+				</p>
+			</div>
+		</footer>
+
+		<script
+			src="https://api-maps.yandex.ru/2.1/?apikey=7a322092-0e89-4de6-8bff-0a1795b5548e&lang=ru_RU"
+			type="text/javascript"
+		></script>
+
+		<script type="text/javascript">
+			ymaps.ready(init);
+
+			var screenWidth = document.documentElement.clientWidth;
+			var center = [55.755864, 37.617698];
+			var zoom = screenWidth > 1000 ? 17 : 15;
+
+			function init() {
+				// Создание карты без контролов
+				var myMap = new ymaps.Map(
+					'map2',
+					{
+						center: center,
+						zoom: zoom,
+						controls: [],
+					},
+					{
+						suppressMapOpenBlock: true,
+					},
+				);
+
+				var myPlacemark = new ymaps.Placemark(
+					[55.755864, 37.617698],
+					{
+						iconContent: 'ул.Барышиха, д.14',
+					},
+					{
+						iconLayout: 'default#imageWithContent', // Макет с текстом
+						iconImageHref: 'img/icons/map.svg', // Картинка маркера
+						iconImageSize: [48, 52], // Размер иконки
+						iconImageOffset: [-24, -52], // Смещение, чтобы текст не перекрывал иконку
+						iconContentOffset: [46, 0], // Смещение текста под маркер
+					},
+				);
+
+				myMap.geoObjects.add(myPlacemark);
+			}
+		</script>
+
+		<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+
+		<!-- jQuery -->
+		<script src="js/jquery-1.5.1.min.js"></script>
+
+		<!-- Menu scroll scripts -->
+		<script type="module" src="js/menu.js"></script>
+
+		<!-- validate form scripts -->
+		<script src="js/validate-form-main.js"></script>
+	</body>
+</html>

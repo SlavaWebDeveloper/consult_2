@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<!-- Bootstrap CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet" />
+
+		<!-- Theme CSS -->
+		<link href="css/theme.css" rel="stylesheet" />
+
+		<link rel="shortcut icon" type="image/x-icon" href="img/ico/email-ico.svg" />
+
+		<title>Universal HTML Template | Главная 1</title>
+	</head>
+	<body class="jobsPage">
+		<section class="bg-accent hero-contactPage">
+			<header class="header fixed-top header-transparent" id="header">
+				<div class="container">
+					<div class="d-flex align-items-center justify-content-between py-3">
+						<!-- Логотип -->
+						<a href="/" class="order-2 order-lg-1 header-logo" aria-label="Homepage">
+							<img src="img/logotip-dark.svg" alt="" loading="lazy" />
+						</a>
+
+						<!-- Бургер-меню (мобильная версия) -->
+						<button
+							class="navbar-toggler d-lg-none"
+							type="button"
+							data-bs-toggle="offcanvas"
+							data-bs-target="#mobileNavbar"
+							aria-controls="mobileNavbar"
+							aria-label="Toggle navigation"
+						>
+							<span class="navbar-toggler-icon"></span>
+						</button>
+
+						<!-- Навигация (для ПК) -->
+						<nav
+							class="d-none d-lg-flex flex-row justify-content-center order-1 order-lg-2 nav-dropdown"
+						>
+							<ul class="navbar-nav d-flex flex-row gap-5 px-3 navbar-nav-dropdown">
+								<li class="nav-item">
+									<a class="nav-link" href="#">Юридическое обслуживание</a>
+								</li>
+								<li class="nav-item dropdown">
+									<a
+										class="nav-link dropdown-toggle"
+										href="#"
+										id="dropdownMenuOffset"
+										role="button"
+										data-bs-toggle="dropdown"
+										aria-expanded="false"
+										data-bs-offset="-76,26"
+									>
+										Бухгалтерское обслуживание
+									</a>
+									<ul class="dropdown-menu">
+										<li>
+											<a class="dropdown-item" href="#"
+												>Название страниц в разделе</a
+											>
+										</li>
+										<li>
+											<a class="dropdown-item" href="#"
+												>Название страниц в разделе</a
+											>
+										</li>
+										<li>
+											<a class="dropdown-item" href="#"
+												>Название страниц в разделе</a
+											>
+										</li>
+									</ul>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Консалтинг</a>
+								</li>
+							</ul>
+						</nav>
+
+						<!-- Социальные сети -->
+						<div class="d-flex align-items-center gap-2 social-icon order-3">
+							<a href="#" class="btn p-0">
+								<img
+									src="img/icons/telegram-dark.svg"
+									class="social-icon"
+									loading="lazy"
+								/>
+							</a>
+							<a href="#" class="btn p-0">
+								<img
+									src="img/icons/whatsApp-dark.svg"
+									class="social-icon"
+									loading="lazy"
+								/>
+							</a>
+							<a href="#" class="btn p-0">
+								<img
+									src="img/icons/telephone-dark.svg"
+									class="social-icon"
+									loading="lazy"
+								/>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<!-- Offcanvas Навигация (для мобильных) -->
+				<div
+					class="offcanvas offcanvas-start"
+					tabindex="-1"
+					id="mobileNavbar"
+					aria-labelledby="mobileNavbarLabel"
+				>
+					<div class="offcanvas-body">
+						<ul class="navbar-nav flex-column justify-content-start">
+							<li class="nav-item">
+								<a class="nav-link" href="#">Юридическое обслуживание</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a
+									class="nav-link dropdown-toggle"
+									href="#"
+									id="dropdownMenuOffset"
+									role="button"
+									data-bs-toggle="dropdown"
+									aria-expanded="false"
+									data-bs-display="static"
+								>
+									Бухгалтерское обслуживание
+								</a>
+								<ul class="dropdown-menu">
+									<li>
+										<a class="dropdown-item" href="#"
+											>Название страниц в разделе</a
+										>
+									</li>
+									<li>
+										<a class="dropdown-item" href="#"
+											>Название страниц в разделе</a
+										>
+									</li>
+									<li>
+										<a class="dropdown-item" href="#"
+											>Название страниц в разделе</a
+										>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Консалтинг</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</header>
+			<section class="bg-accent text-center section section-call">
+				<div class="container">
+					<h2 class="text-uppercase lh-1">Присоединяйся к нашей команде!</h2>
+					<p class="mb-4 text-uppercase lh-1 h3">Хочу в команду</p>
+					<button
+						class="btn btn-light"
+						data-bs-toggle="modal"
+						data-bs-target="#contactModal"
+					>
+						Оставить заявку
+					</button>
+				</div>
+			</section>
+		</section>
+
+		<section
+			class="accountingPageHero section d-flex justify-content-center align-items-center"
+		>
+			<div class="container">
+				<div class="row justify-content-between">
+					<!-- Правая колонка -->
+					<div
+						class="col-12 col-lg-6 d-flex flex-column justify-content-between align-items-start"
+					>
+						<h1 class="text-uppercase lh-1 h2 w-100 mb-3 mb-lg-0">
+							тут будет текст о нас от лица Ген. директора тут будет текст о нас от
+							лица Ген. директора тут будет текст о нас от лица Ген. директора
+						</h1>
+					</div>
+
+					<!-- Левая колонка -->
+					<div class="col-12 col-lg-5">
+						<img
+							class="accounting-cards-img w-100"
+							src="img/Mamayeva-Irina-General-Director.jpg"
+							alt="..."
+							loading="lazy"
+						/>
+						<div class="text-start mt-4">
+							<p class="hero-text">
+								<span class="fw-bold"> Мамаева Ирина</span> Генеральный директор,<br />
+								член Палаты налоговых консультантов
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div class="d-block d-lg-none" style="height: 10px"></div>
+
+		<section class="section bg-accent">
+			<div class="accordion container" id="faqAccordion">
+				<div class="accordion-item mb-4">
+					<h2 class="accordion-header" id="headingOne">
+						<button
+							class="accordion-button d-flex align-items-center"
+							type="button"
+							data-bs-toggle="collapse"
+							data-bs-target="#collapseOne"
+							aria-expanded="false"
+							aria-controls="collapseOne"
+						>
+							<span class="icon"></span>
+							<h3 class="m-0 text-uppercase fw-medium">ГЛАВНЫЙ БУХГАЛТЕР</h3>
+						</button>
+					</h2>
+					<div
+						id="collapseOne"
+						class="accordion-collapse collapse"
+						aria-labelledby="headingOne"
+						data-bs-parent="#faqAccordion"
+					>
+						<div class="accordion-body">
+							<p>Тут будет небольшой текст ответа на вопрос</p>
+						</div>
+					</div>
+				</div>
+				<div class="accordion-item mb-4">
+					<h2 class="accordion-header" id="headingTwo">
+						<button
+							class="accordion-button d-flex align-items-center"
+							type="button"
+							data-bs-toggle="collapse"
+							data-bs-target="#collapseTwo"
+							aria-expanded="false"
+							aria-controls="collapseTwo"
+						>
+							<span class="icon"></span>
+							<h3 class="m-0 text-uppercase fw-medium">БУХГАЛТЕР</h3>
+						</button>
+					</h2>
+					<div
+						id="collapseTwo"
+						class="accordion-collapse collapse"
+						aria-labelledby="headingTwo"
+						data-bs-parent="#faqAccordion"
+					>
+						<div class="accordion-body">
+							<p>Тут будет небольшой текст ответа на вопрос</p>
+						</div>
+					</div>
+				</div>
+				<div class="accordion-item mb-4">
+					<h2 class="accordion-header" id="headingThree">
+						<button
+							class="accordion-button d-flex align-items-center"
+							type="button"
+							data-bs-toggle="collapse"
+							data-bs-target="#collapseThree"
+							aria-expanded="false"
+							aria-controls="collapseThree"
+						>
+							<span class="icon"></span>
+							<h3 class="m-0 text-uppercase fw-medium">ПОМОЩНИК</h3>
+						</button>
+					</h2>
+					<div
+						id="collapseThree"
+						class="accordion-collapse collapse"
+						aria-labelledby="headingThree"
+						data-bs-parent="#faqAccordion"
+					>
+						<div class="accordion-body">
+							<p>Тут будет небольшой текст ответа на вопрос</p>
+						</div>
+					</div>
+				</div>
+				<div class="accordion-item mb-4">
+					<h2 class="accordion-header" id="headingFour">
+						<button
+							class="accordion-button d-flex align-items-center"
+							type="button"
+							data-bs-toggle="collapse"
+							data-bs-target="#collapseFour"
+							aria-expanded="false"
+							aria-controls="collapseFour"
+						>
+							<span class="icon"></span>
+							<h3 class="m-0 text-uppercase fw-medium">ФИНАНСОВЫЙ АНАЛИТИК</h3>
+						</button>
+					</h2>
+					<div
+						id="collapseFour"
+						class="accordion-collapse collapse"
+						aria-labelledby="headingFour"
+						data-bs-parent="#faqAccordion"
+					>
+						<div class="accordion-body">
+							<p>Тут будет небольшой текст ответа на вопрос</p>
+						</div>
+					</div>
+				</div>
+				<div class="accordion-item">
+					<h2 class="accordion-header" id="headingFive">
+						<button
+							class="accordion-button d-flex align-items-center"
+							type="button"
+							data-bs-toggle="collapse"
+							data-bs-target="#collapseFive"
+							aria-expanded="false"
+							aria-controls="collapseFive"
+						>
+							<span class="icon"></span>
+							<h3 class="m-0 text-uppercase fw-medium">БУХГАЛТЕР ПО ОПЛАТЕ ТРУДА</h3>
+						</button>
+					</h2>
+					<div
+						id="collapseFive"
+						class="accordion-collapse collapse"
+						aria-labelledby="headingFive"
+						data-bs-parent="#faqAccordion"
+					>
+						<div class="accordion-body">
+							<p>Тут будет небольшой текст ответа на вопрос</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="contact-section bg-grey" aria-labelledby="contact-title">
+			<div class="container">
+				<div
+					class="row justify-content-center justify-content-md-between position-relative contact-section-form-inner align-items-center"
+				>
+					<div class="col-12 col-md-7 z-2 mb-5 mb-md-0 pe-0 pe-md-5">
+						<img
+							src="img/freepik__four-people-average-age-35-average-race-white-shak__68390.png"
+							alt="Оператор колл-центра общается с клиентами по гарнитуре"
+							class="contact-section-img w-100 "
+							loading="lazy"
+						/>
+					</div>
+
+					<div class="col-12 col-md-5 z-2">
+						<h2
+							aria-labelledby="contact-title"
+							class="contact-section-title text-uppercase"
+						>
+							Присоединиться к команде
+						</h2>
+						<form
+							class="w-100 contact-section-form"
+							id="contactForm"
+							novalidate
+							aria-describedby="form-instruction"
+						>
+							<p id="form-instruction" class="visually-hidden">
+								Введите ваше фио, email и телефон (они обязательны для заполнения),
+								на какую должность планируете вступить.
+							</p>
+
+							<label class="custom-field">
+								<input
+									name="name"
+									type="text"
+									placeholder="Ф.И.О"
+									required
+									aria-required="true"
+								/>
+								<span class="placeholder">Ф.И.О</span>
+								<span class="error-message" aria-live="polite"></span>
+							</label>
+							<label class="custom-field">
+								<input
+									name="email"
+									type="email"
+									placeholder="Ваш e-mail"
+									required
+									aria-required="true"
+								/>
+								<span class="placeholder">Почта</span>
+								<span class="error-message" aria-live="polite"></span>
+							</label>
+							<label class="custom-field ">
+								<input
+									name="post"
+									placeholder="Сообщение или детали запроса"
+									aria-describedby="post"
+								></input>
+								<span class="placeholder">На должность</span>
+								<span class="error-message" aria-live="polite"></span>
+							</label>
+							<label class="custom-field mb-4">
+								<input
+									name="phone"
+									type="tel"
+									placeholder="Ваш номер телефона"
+									required
+									aria-required="true"
+								/>
+								<span class="placeholder">Телефон</span>
+								<span class="error-message" aria-live="polite"></span>
+							</label>
+
+							<button
+								type="submit"
+								class="btn btn-accent"
+								aria-label="Отправить заявку"
+							>
+								оставить заявку
+							</button>
+
+							<p class="mt-4 pt-3 mb-0">
+								Также Вы можете отправить своё резюме нам на почту:
+								<a href="mailto:info@mir-consult.ru"> info@mir-consult.ru </a>
+								или связаться с нами по телефону:
+								<a href="tel:+79037008333"> +7 (903) 700-83-33</a>
+							</p>
+						</form>
+
+						<div
+							id="successMessage"
+							class="success-message"
+							role="alert"
+							aria-live="assertive"
+						>
+							<p class="h2">Форма успешно отправлена!</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer bg-dark text-white">
+			<div class="container">
+				<div class="row row-cols-1 row-cols-md-4 gy-4 align-items-stretch">
+					<div class="col col-md-3 col-lg-2 d-flex flex-column justify-content-between r">
+						<a href="#" class="footer-logo">
+							<img src="img/logotip-light.svg" alt="Логотип" class="img-fluid" />
+						</a>
+						<p class="footer-copyright d-none d-md-block m-0">
+							&copy; 2025 Meritora, Inc. <br />
+							All rights reserved.
+						</p>
+					</div>
+
+					<div class="col col-md-5 col-lg-4 footer-link-wrapper">
+						<ul class="list-unstyled footer-link mt-0">
+							<li>
+								<a href="#" class="text-white text-decoration-none"
+									>Регистрация бизнеса</a
+								>
+							</li>
+							<li>
+								<a href="#" class="text-white text-decoration-none"
+									>Юридическое обслуживание</a
+								>
+							</li>
+							<li>
+								<a href="#" class="text-white text-decoration-none">Консалтинг</a>
+							</li>
+							<li>
+								<a href="#" class="text-white text-decoration-none"
+									>Знания (личный опыт/советы)</a
+								>
+							</li>
+						</ul>
+					</div>
+
+					<div class="col col-md-3 col-lg-4">
+						<ul class="list-unstyled mt-0">
+							<li>
+								<a href="#" class="text-white text-decoration-none">О компании</a>
+							</li>
+							<li>
+								<a href="#" class="text-white text-decoration-none">Контакты</a>
+							</li>
+							<li>
+								<a href="#" class="text-white text-decoration-none">Вакансии</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="col col-md-1 col-lg-2 align-content-center footer-social-icons">
+						<div class="social-icons d-flex gap-2 flex-md-column flex-lg-row">
+							<a href="#" class="p-0">
+								<img src="img/icons/vk.svg" class="social-icon" loading="lazy" />
+							</a>
+							<a href="#" class="p-0">
+								<img
+									src="img/icons/youtube.svg"
+									class="social-icon"
+									loading="lazy"
+								/>
+							</a>
+							<a href="#" class="p-0">
+								<img
+									src="img/icons/telegram.svg"
+									class="social-icon"
+									loading="lazy"
+								/>
+							</a>
+						</div>
+					</div>
+				</div>
+				<!-- Копирайт для больших экранов -->
+				<p class="footer-copyright d-md-none mb-0">
+					&copy; 2025 Meritora, Inc.
+					<br />All rights reserved.
+				</p>
+			</div>
+		</footer>
+
+		<!-- Модальное окно для видео -->
+		<div
+			class="modal fade"
+			id="videoModal"
+			tabindex="-1"
+			aria-labelledby="videoModalLabel"
+			aria-hidden="true"
+			data-bs-backdrop="static"
+		>
+			<div class="modal-dialog modal-dialog-centered modal-custom">
+				<div class="modal-content justify-content-center">
+					<div class="modal-header">
+						<h5
+							class="modal-title h2 text-center lh-1 text-uppercase"
+							id="videoModalLabel"
+						>
+							отдельные услуги
+						</h5>
+					</div>
+					<div class="modal-body p-0 align-content-center">
+						<div class="ratio ratio-16x9 video-container">
+							<iframe
+								src=""
+								frameborder="0"
+								allow="autoplay; encrypted-media"
+								allowfullscreen
+								id="modalVideoIframe"
+							></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div
+			class="modal fade bg-light"
+			id="contactModal"
+			tabindex="-1"
+			aria-labelledby="contactModalLabel"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog modal-dialog-centered h-100">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title text-uppercase" id="contactModalLabel">
+							Оставьте заявку
+						</h5>
+						<button
+							type="button"
+							class="btn-close"
+							data-bs-dismiss="modal"
+							aria-label="Закрыть"
+						></button>
+					</div>
+					<div class="modal-body">
+						<form class="w-100 contact-section-form" id="contactForm" novalidate>
+							<label class="custom-field">
+								<input name="name" type="text" placeholder="Ваше имя" required />
+								<span class="placeholder">Имя</span>
+								<span class="error-message" aria-live="polite"></span>
+							</label>
+							<label class="custom-field">
+								<input
+									name="email"
+									type="email"
+									placeholder="Ваш e-mail"
+									required
+								/>
+								<span class="placeholder">Почта</span>
+								<span class="error-message" aria-live="polite"></span>
+							</label>
+							<label class="custom-field">
+								<input
+									name="phone"
+									type="tel"
+									placeholder="Ваш номер телефона"
+									required
+								/>
+								<span class="placeholder">Телефон</span>
+								<span class="error-message" aria-live="polite"></span>
+							</label>
+							<label class="custom-field mb-4">
+								<textarea
+									name="comment"
+									placeholder="Сообщение или детали запроса"
+									rows="3"
+									maxlength="300"
+								></textarea>
+								<span class="placeholder">Детали</span>
+							</label>
+							<button type="submit" class="btn btn-accent">Оставить заявку</button>
+						</form>
+
+						<div
+							id="successMessage"
+							class="success-message text-center mt-3"
+							style="display: none"
+						>
+							<p class="h2">Форма успешно отправлена!</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+
+		<!-- jQuery -->
+		<script src="js/jquery-1.5.1.min.js"></script>
+
+		<!-- Menu scroll scripts -->
+		<script type="module" src="js/menu.js"></script>
+
+		<!-- validate form scripts -->
+		<script src="js/validate-form-main-job.js"></script>
+
+		<!-- validate form scripts -->
+		<script src="js/modal-video.js"></script>
+	</body>
+</html>
